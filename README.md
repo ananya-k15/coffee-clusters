@@ -1,4 +1,4 @@
-![header]()
+![header](https://github.com/ananya-k15/coffee_clusters/blob/master/assets/header.png)
 
 This repository trains a supervised machine learning model to predict the best location to open a coffee shop in New Delhi for the IBM Applied Data Science Capstone Course by Coursera.
 
@@ -9,7 +9,7 @@ This repository trains a supervised machine learning model to predict the best l
 3. [Methodology](#2)<br>
 4. [Results](#3)<br>
 5. [Scope for Further Development](#4)<br>
-6. [References] (#5)<br>
+6. [References](#5)<br>
 
 ## Business Problem <a id="0"></a>
 
@@ -29,6 +29,8 @@ Here is a list of the data requirements, and the sources used to obtain them :
 
 1. Build a dataframe of neighborhoods in New Delhi, India by web scraping the data from Wikipedia page.
 
+https://user-images.githubusercontent.com/68656129/224576538-13cb0a04-3127-4455-94e9-d2ee867bbfd5.mov
+
 2. Get the geographical coordinates of the neighborhoods in New Delhi.
 3. Obtain the venue data for the neighborhoods from Foursquare API
 4. Explore and cluster the neighborhoods in Delhi.
@@ -38,21 +40,23 @@ Here is a list of the data requirements, and the sources used to obtain them :
 
 We can see that neighborhoods that have the most number of coffee shops are at the heart of the city and the number of coffee shops per neighborhood decreases as we move away from the centre.
 
-There are :
+![colored map of clusters in new delhi](https://github.com/ananya-k15/coffee_clusters/blob/master/assets/results-1.png)
 
+There are :
 1. Most residential neighborhoods are in the first cluster since they don't have any coffee shops.
 2. There are almost no coffee shops in cluster 1, while the second cluster has a moderate number of coffee shops.
 3. A lot of neighborhoods have too many coffee shops, and belong to clusters 2 and 3.
+
+![labeled map of clusters in new delhi](https://github.com/ananya-k15/coffee_clusters/blob/master/assets/results-2.png)
 
 Hence, there is great disparity in the distribution of coffee shops across neighborhoods. This shows that any potential investors would be better suited investing in clusters 0, 1 or 3.
 
 ## Scope for Further Development <a id="4"></a>
 
-In this project, only one factor was considered: the frequency of occurrence of coffee shops in neighboring localities. In any future research, considering other features like neighborhood population and resident income will provide a comprehensive result. <br> Since project made use of the free SandBox Tier of the Foursquare API, it was limited to a specific number of API calls and results that could be returned. With a paid account these limitations can be bypassed to obtain much more holistic results.
+1. In this project, only one factor was considered: the frequency of occurrence of coffee shops in neighboring localities. In any future research, considering other features like neighborhood population and resident income will provide a comprehensive result. 
+2. Since project made use of the free SandBox Tier of the Foursquare API, it was limited to a specific number of API calls and results that could be returned. With a paid account these limitations can be bypassed to obtain much more holistic results.
 
 ## References <a id="5"></a>
 
-Category: Neighbourhoods in Delhi Wikipedia retrieved from
-https://en.wikipedia.org/wiki/Category:Neighbourhoods_in_Delhi <br>
-Foursquare Developers Documentation Foursquare retrieved from
-https://developer.foursquare.com/docs/
+- Category: Neighbourhoods in Delhi Wikipedia retrieved from https://en.wikipedia.org/wiki/Category:Neighbourhoods_in_Delhi 
+- Foursquare Developers Documentation Foursquare retrieved from https://developer.foursquare.com/docs/
